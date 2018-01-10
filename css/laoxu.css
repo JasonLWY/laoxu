@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*通用样式*/
+*,
+::before,
+::after {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /*点击高亮*/
+  -webkit-tap-highlight-color: transparent;
+  /*盒子模型*/
+  /*样式输入 tap*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*文字一直*/
+  font-family: '微软雅黑',sans-serif; }
+
+/*input 标签 去掉默认样式*/
+input {
+  border: none;
+  -webkit-appearance: none; }
+
+/*a text-de*/
+a {
+  text-decoration: none; }
+
+/*list-style*/
+ol, ul {
+  list-style: none; }
+
+/*浮动设置*/
+.f_l {
+  float: left; }
+
+.f_r {
+  float: right; }
+
+/*清除浮动*/
+.clearfix::before, .container .footer .footer_ul_list::before,
+.clearfix::after,
+.container .footer .footer_ul_list::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+  position: relative; }
+  .container .head {
+    width: 100%;
+    height: 1.952rem;
+    background-color: #FFFFFF; }
+    .container .head .coordinate {
+      width: 0.64rem;
+      height: 0.816rem;
+      position: absolute;
+      top: 0.592rem;
+      left: 0.832rem;
+      background-image: url("../images/coordinate_icon.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .container .head .head_title {
+      line-height: 1.952rem; }
+      .container .head .head_title a {
+        color: black;
+        font-size: 0.608rem;
+        font-weight: 600;
+        font-family: 新宋体;
+        padding-left: 1.776rem; }
+    .container .head .head_retreat_icon a {
+      display: inline-block; }
+      .container .head .head_retreat_icon a i {
+        width: 1.136rem;
+        height: 0.864rem;
+        display: inline-block;
+        position: absolute;
+        top: 0.512rem;
+        right: 1.28rem;
+        background-image: url("../images/back_or_to.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+  .container .middle {
+    width: 100%;
+    height: 7.056rem;
+    background-color: #F58B2C;
+    position: relative; }
+    .container .middle .middle_left {
+      margin-left: 0.848rem;
+      overflow: hidden; }
+      .container .middle .middle_left .logo {
+        width: 3.04rem;
+        height: 3.04rem;
+        background-color: #F2F2F2;
+        border-radius: 50%;
+        position: absolute;
+        top: 2rem;
+        left: 0.848rem; }
+        .container .middle .middle_left .logo img {
+          display: inline-block;
+          width: 2.88rem;
+          border-radius: 50%;
+          padding-top: 5px;
+          padding-left: 5px; }
+    .container .middle .middle_right .name {
+      position: absolute;
+      top: 2.56rem;
+      left: 4.64rem; }
+      .container .middle .middle_right .name i {
+        font-style: normal;
+        color: white; }
+      .container .middle .middle_right .name i:nth-of-type(1) {
+        font-size: 0.64rem;
+        font-family: '微软雅黑', sans-serif; }
+      .container .middle .middle_right .name i:nth-of-type(2) {
+        font-size: 0.56rem;
+        font-family: '微软雅黑', sans-serif; }
+    .container .middle .middle_right .code {
+      position: absolute;
+      top: 2.592rem;
+      right: 4.32rem;
+      width: 4.192rem;
+      height: 0.96rem;
+      font-size: 0.56rem;
+      border-radius: 0.96rem;
+      background-color: #FB6EAB;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 0.96rem; }
+    .container .middle .middle_right .tip {
+      position: absolute;
+      top: 4.16rem;
+      left: 4.64rem;
+      font-size: 0.56rem;
+      color: white; }
+      .container .middle .middle_right .tip a {
+        font-size: 0.56rem;
+        color: #FFFFFF; }
+  .container .footer {
+    width: 100%;
+    margin-top: 0.24rem; }
+    .container .footer .footer_ul_list {
+      margin-left: 0.192rem; }
+      .container .footer .footer_ul_list li {
+        float: left;
+        position: relative;
+        width: 7.2rem;
+        height: 4.32rem;
+        background: white;
+        text-align: center;
+        line-height: 3.2rem;
+        margin: 0.32rem; }
+        .container .footer .footer_ul_list li i {
+          display: inline-block;
+          width: 1.264rem;
+          height: 1.264rem;
+          background-image: url("../images/test.png");
+          background-repeat: no-repeat;
+          background-size: 1.072rem 1.264rem; }
+        .container .footer .footer_ul_list li em {
+          font-style: normal;
+          position: absolute;
+          top: 0.96rem;
+          left: 2.288rem;
+          font-size: 0.624rem;
+          font-weight: 600;
+          font-family: 新宋体; }
+
+/*# sourceMappingURL=laoxu.css.map */
